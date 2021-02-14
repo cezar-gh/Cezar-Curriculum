@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+	
+			<div class="topo">
+				<h2>Cezar Vargas Fernandes</h2>
+				<h5>Sênior 60+ se reinventando</h5>
+				<h3>Estagiário de Programação</h3>
+				<h5>Brasileiro, 63 anos, casado</h5>
+				<h5>Telefones: (24) 98125-1669  (24) 2242-3198</h5>			
+				<h5>cezar.vargas.fernandes@gmail.com</h5>
+				<p class="construtor">Esta página foi construída por Cezar Vargas Fernandes</p>
+			</div>   
+
+			<img class="foto" src="banner.jpg">
+
+			<div class="caixa">
+				<nav>
+					<ul>
+						<p class="textoMenu">Menu</p>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="pitch.html">Pitch</a></li>
+						<li><a href="experiencia.html">Experiência Profissional</a></li>
+						<li><a href="ambientes.html">Ambientes Vivenciados</a></li>
+						<li><a href="cursos.html">Cursos</a></li>
+						<li><a href="certificacoes.html">Certificações</a></li>
+						<li><a href="empresas.html">Empresas Trabalhadas</a></li>
+						<li><a href="formacao.html">Formação Acadêmica</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="principal"> 
+			<div class="contato">
+				<h4>Contato</h4>
+				<form action="/prinipal.js" method="POST">
+					<div>
+						<input type="hidden" name="recipient" value="cezar.vargas.fernandes@gmail.com">
+	 					<input type="hidden" name="redirect" value="file:///C:/Users/cezar/Documents/Labora/CurriculumCezar-HTML-CSS/index.html">
+	 					<input type="hidden" name="subject" value="Envio do formulário HTML/CSS">
+	 					<input type="hidden" name="email" value="cezar.vargas.fernandes@gmail.com"> 
+	 				</div>
+	 				<div>
+						<label for="nomecompleto">Nome completo</label>
+						<input type="text" id="nomecompleto" class="caixa-input" required placeholder="Seu nome completo" name="usuario_nome">
+					</div>
+					<div>
+						<label for="email">e-Mail</label>
+						<input type="email" id="email"  class="caixa-input" required placeholder="seuemail@dominio" name="usuario_email">
+					</div>
+					<div>	
+						<label for="telefone">Telefone com DDD</label>
+						<input type="tel" id="telefone" class="caixa-input" required placeholder="(99) 99999-9999 " name="usuario_tel">
+					</div>
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea  class="caixa-input" cols="69" rows="10" id="mensagem" required placeholder="Sua mensagem" name="usuario_msg"></textarea>		
+					</div>
+					<div>
+						<button class="caixa-enviar" type="submit">Enviar formulário</button>
+					</div>
+				</form>
+			</div>
+		</div>
+ 	</body>
+</html>
